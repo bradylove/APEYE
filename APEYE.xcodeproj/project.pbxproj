@@ -1,0 +1,360 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2378D2CE1602F6D300F0D5CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2CD1602F6D300F0D5CD /* Cocoa.framework */; };
+		2378D2D01602F6D300F0D5CD /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2CF1602F6D300F0D5CD /* MacRuby.framework */; };
+		2378D2D91602F6D300F0D5CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2D71602F6D300F0D5CD /* InfoPlist.strings */; };
+		2378D2DB1602F6D300F0D5CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378D2DA1602F6D300F0D5CD /* main.m */; };
+		2378D2E01602F6D300F0D5CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2DE1602F6D300F0D5CD /* MainMenu.xib */; };
+		2378D2E31602F6D300F0D5CD /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2E21602F6D300F0D5CD /* rb_main.rb */; };
+		2378D2E51602F6D300F0D5CD /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2E41602F6D300F0D5CD /* AppDelegate.rb */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2378D2D21602F6D300F0D5CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2378D2C01602F6D300F0D5CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2378D2C81602F6D300F0D5CD;
+			remoteInfo = APEYE;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2378D2C91602F6D300F0D5CD /* APEYE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APEYE.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2378D2CD1602F6D300F0D5CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		2378D2CF1602F6D300F0D5CD /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
+		2378D2D61602F6D300F0D5CD /* APEYE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APEYE-Info.plist"; sourceTree = "<group>"; };
+		2378D2D81602F6D300F0D5CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2378D2DA1602F6D300F0D5CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2378D2DC1602F6D300F0D5CD /* APEYE-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "APEYE-Prefix.pch"; sourceTree = "<group>"; };
+		2378D2DF1602F6D300F0D5CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		2378D2E21602F6D300F0D5CD /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
+		2378D2E41602F6D300F0D5CD /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2378D2C61602F6D300F0D5CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2378D2CE1602F6D300F0D5CD /* Cocoa.framework in Frameworks */,
+				2378D2D01602F6D300F0D5CD /* MacRuby.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2378D2BE1602F6D300F0D5CD = {
+			isa = PBXGroup;
+			children = (
+				2378D2D41602F6D300F0D5CD /* APEYE */,
+				2378D2CC1602F6D300F0D5CD /* Frameworks */,
+				2378D2CA1602F6D300F0D5CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2378D2CA1602F6D300F0D5CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2378D2C91602F6D300F0D5CD /* APEYE.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2378D2CC1602F6D300F0D5CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2378D2CD1602F6D300F0D5CD /* Cocoa.framework */,
+				2378D2CF1602F6D300F0D5CD /* MacRuby.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2378D2D41602F6D300F0D5CD /* APEYE */ = {
+			isa = PBXGroup;
+			children = (
+				2378D2E41602F6D300F0D5CD /* AppDelegate.rb */,
+				2378D2DD1602F6D300F0D5CD /* Resources */,
+				2378D2E11602F6D300F0D5CD /* Other Sources */,
+				2378D2D51602F6D300F0D5CD /* Supporting Files */,
+			);
+			path = APEYE;
+			sourceTree = "<group>";
+		};
+		2378D2D51602F6D300F0D5CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2378D2D61602F6D300F0D5CD /* APEYE-Info.plist */,
+				2378D2D71602F6D300F0D5CD /* InfoPlist.strings */,
+				2378D2DA1602F6D300F0D5CD /* main.m */,
+				2378D2DC1602F6D300F0D5CD /* APEYE-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2378D2DD1602F6D300F0D5CD /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2378D2DE1602F6D300F0D5CD /* MainMenu.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		2378D2E11602F6D300F0D5CD /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				2378D2E21602F6D300F0D5CD /* rb_main.rb */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXLegacyTarget section */
+		2378D2D11602F6D300F0D5CD /* Deployment */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "--compile --embed";
+			buildConfigurationList = 2378D2EB1602F6D300F0D5CD /* Build configuration list for PBXLegacyTarget "Deployment" */;
+			buildPhases = (
+			);
+			buildToolPath = /usr/local/bin/macruby_deploy;
+			dependencies = (
+				2378D2D31602F6D300F0D5CD /* PBXTargetDependency */,
+			);
+			name = Deployment;
+			passBuildSettingsInEnvironment = 1;
+			productName = Deployment;
+		};
+/* End PBXLegacyTarget section */
+
+/* Begin PBXNativeTarget section */
+		2378D2C81602F6D300F0D5CD /* APEYE */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2378D2E81602F6D300F0D5CD /* Build configuration list for PBXNativeTarget "APEYE" */;
+			buildPhases = (
+				2378D2C51602F6D300F0D5CD /* Sources */,
+				2378D2C61602F6D300F0D5CD /* Frameworks */,
+				2378D2C71602F6D300F0D5CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = APEYE;
+			productName = APEYE;
+			productReference = 2378D2C91602F6D300F0D5CD /* APEYE.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2378D2C01602F6D300F0D5CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Brady Love";
+			};
+			buildConfigurationList = 2378D2C31602F6D300F0D5CD /* Build configuration list for PBXProject "APEYE" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2378D2BE1602F6D300F0D5CD;
+			productRefGroup = 2378D2CA1602F6D300F0D5CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2378D2C81602F6D300F0D5CD /* APEYE */,
+				2378D2D11602F6D300F0D5CD /* Deployment */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2378D2C71602F6D300F0D5CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2378D2D91602F6D300F0D5CD /* InfoPlist.strings in Resources */,
+				2378D2E01602F6D300F0D5CD /* MainMenu.xib in Resources */,
+				2378D2E31602F6D300F0D5CD /* rb_main.rb in Resources */,
+				2378D2E51602F6D300F0D5CD /* AppDelegate.rb in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2378D2C51602F6D300F0D5CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2378D2DB1602F6D300F0D5CD /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2378D2D31602F6D300F0D5CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2378D2C81602F6D300F0D5CD /* APEYE */;
+			targetProxy = 2378D2D21602F6D300F0D5CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		2378D2D71602F6D300F0D5CD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2378D2D81602F6D300F0D5CD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2378D2DE1602F6D300F0D5CD /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2378D2DF1602F6D300F0D5CD /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2378D2E61602F6D300F0D5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		2378D2E71602F6D300F0D5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		2378D2E91602F6D300F0D5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APEYE/APEYE-Prefix.pch";
+				INFOPLIST_FILE = "APEYE/APEYE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2378D2EA1602F6D300F0D5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+				);
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "APEYE/APEYE-Prefix.pch";
+				INFOPLIST_FILE = "APEYE/APEYE-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		2378D2EC1602F6D300F0D5CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		2378D2ED1602F6D300F0D5CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2378D2C31602F6D300F0D5CD /* Build configuration list for PBXProject "APEYE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2378D2E61602F6D300F0D5CD /* Debug */,
+				2378D2E71602F6D300F0D5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2378D2E81602F6D300F0D5CD /* Build configuration list for PBXNativeTarget "APEYE" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2378D2E91602F6D300F0D5CD /* Debug */,
+				2378D2EA1602F6D300F0D5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		2378D2EB1602F6D300F0D5CD /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2378D2EC1602F6D300F0D5CD /* Debug */,
+				2378D2ED1602F6D300F0D5CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2378D2C01602F6D300F0D5CD /* Project object */;
+}
