@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2315B77C1604752100CC4B1B /* parameter_table.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2315B77B1604752100CC4B1B /* parameter_table.rb */; };
+		2325B9F616053FEC00F39F93 /* RecentUrls.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2325B9F516053FEC00F39F93 /* RecentUrls.plist */; };
+		2325B9FD1605434400F39F93 /* recent_request.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2325B9FB1605434400F39F93 /* recent_request.rb */; };
+		2325B9FE1605434400F39F93 /* recent_requests_datasource.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2325B9FC1605434400F39F93 /* recent_requests_datasource.rb */; };
+		2325BA011605586200F39F93 /* ns_index_set.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2325BA001605586200F39F93 /* ns_index_set.rb */; };
 		2378D2CE1602F6D300F0D5CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2CD1602F6D300F0D5CD /* Cocoa.framework */; };
 		2378D2D01602F6D300F0D5CD /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2CF1602F6D300F0D5CD /* MacRuby.framework */; };
 		2378D2D91602F6D300F0D5CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2D71602F6D300F0D5CD /* InfoPlist.strings */; };
@@ -14,6 +19,7 @@
 		2378D2E01602F6D300F0D5CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2DE1602F6D300F0D5CD /* MainMenu.xib */; };
 		2378D2E31602F6D300F0D5CD /* rb_main.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2E21602F6D300F0D5CD /* rb_main.rb */; };
 		2378D2E51602F6D300F0D5CD /* AppDelegate.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2E41602F6D300F0D5CD /* AppDelegate.rb */; };
+		23BBEA9216047A6D00BABC40 /* parameter.rb in Resources */ = {isa = PBXBuildFile; fileRef = 23BBEA9116047A6D00BABC40 /* parameter.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +33,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2315B77B1604752100CC4B1B /* parameter_table.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = parameter_table.rb; sourceTree = "<group>"; };
+		2325B9F516053FEC00F39F93 /* RecentUrls.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = RecentUrls.plist; sourceTree = "<group>"; };
+		2325B9FB1605434400F39F93 /* recent_request.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = recent_request.rb; sourceTree = "<group>"; };
+		2325B9FC1605434400F39F93 /* recent_requests_datasource.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = recent_requests_datasource.rb; sourceTree = "<group>"; };
+		2325BA001605586200F39F93 /* ns_index_set.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ns_index_set.rb; sourceTree = "<group>"; };
 		2378D2C91602F6D300F0D5CD /* APEYE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APEYE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2378D2CD1602F6D300F0D5CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		2378D2CF1602F6D300F0D5CD /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
@@ -37,6 +48,7 @@
 		2378D2DF1602F6D300F0D5CD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		2378D2E21602F6D300F0D5CD /* rb_main.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = rb_main.rb; sourceTree = "<group>"; };
 		2378D2E41602F6D300F0D5CD /* AppDelegate.rb */ = {isa = PBXFileReference; lastKnownFileType = text.script.ruby; path = AppDelegate.rb; sourceTree = "<group>"; };
+		23BBEA9116047A6D00BABC40 /* parameter.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = parameter.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +93,11 @@
 		2378D2D41602F6D300F0D5CD /* APEYE */ = {
 			isa = PBXGroup;
 			children = (
+				2325BA001605586200F39F93 /* ns_index_set.rb */,
+				2325B9FB1605434400F39F93 /* recent_request.rb */,
+				2325B9FC1605434400F39F93 /* recent_requests_datasource.rb */,
+				23BBEA9116047A6D00BABC40 /* parameter.rb */,
+				2315B77B1604752100CC4B1B /* parameter_table.rb */,
 				2378D2E41602F6D300F0D5CD /* AppDelegate.rb */,
 				2378D2DD1602F6D300F0D5CD /* Resources */,
 				2378D2E11602F6D300F0D5CD /* Other Sources */,
@@ -92,6 +109,7 @@
 		2378D2D51602F6D300F0D5CD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2325B9F516053FEC00F39F93 /* RecentUrls.plist */,
 				2378D2D61602F6D300F0D5CD /* APEYE-Info.plist */,
 				2378D2D71602F6D300F0D5CD /* InfoPlist.strings */,
 				2378D2DA1602F6D300F0D5CD /* main.m */,
@@ -189,6 +207,12 @@
 				2378D2E01602F6D300F0D5CD /* MainMenu.xib in Resources */,
 				2378D2E31602F6D300F0D5CD /* rb_main.rb in Resources */,
 				2378D2E51602F6D300F0D5CD /* AppDelegate.rb in Resources */,
+				2315B77C1604752100CC4B1B /* parameter_table.rb in Resources */,
+				23BBEA9216047A6D00BABC40 /* parameter.rb in Resources */,
+				2325B9F616053FEC00F39F93 /* RecentUrls.plist in Resources */,
+				2325B9FD1605434400F39F93 /* recent_request.rb in Resources */,
+				2325B9FE1605434400F39F93 /* recent_requests_datasource.rb in Resources */,
+				2325BA011605586200F39F93 /* ns_index_set.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -304,6 +329,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SYSTEM_APPS_DIR)/Xcode.app/Contents/Developer/Library/Frameworks\"",
+					"/Library/Frameworks/**",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -345,6 +371,7 @@
 				2378D2EA1602F6D300F0D5CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2378D2EB1602F6D300F0D5CD /* Build configuration list for PBXLegacyTarget "Deployment" */ = {
 			isa = XCConfigurationList;
@@ -353,6 +380,7 @@
 				2378D2ED1602F6D300F0D5CD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
