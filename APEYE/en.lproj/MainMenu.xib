@@ -1732,7 +1732,7 @@
 												<bool key="EncodedWithXMLCoder">YES</bool>
 												<object class="NSTableColumn" id="807644658">
 													<string key="NSIdentifier">sign</string>
-													<double key="NSWidth">27.2578125</double>
+													<double key="NSWidth">31</double>
 													<double key="NSMinWidth">10</double>
 													<double key="NSMaxWidth">3.4028234663852886e+38</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -1779,7 +1779,7 @@
 												</object>
 												<object class="NSTableColumn" id="393009606">
 													<string key="NSIdentifier">key</string>
-													<double key="NSWidth">132.1875</double>
+													<double key="NSWidth">134.08203125</double>
 													<double key="NSMinWidth">40</double>
 													<double key="NSMaxWidth">1000</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -1809,7 +1809,7 @@
 												</object>
 												<object class="NSTableColumn" id="553985533">
 													<string key="NSIdentifier">value</string>
-													<double key="NSWidth">374</double>
+													<double key="NSWidth">368</double>
 													<double key="NSMinWidth">40</double>
 													<double key="NSMaxWidth">1000</double>
 													<object class="NSTableHeaderCell" key="NSHeaderCell">
@@ -5908,9 +5908,11 @@ wGw</bytes>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>data_array</string>
 							<string>parameter_table</string>
+							<string>view</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -5921,6 +5923,7 @@ wGw</bytes>
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>data_array</string>
 							<string>parameter_table</string>
+							<string>view</string>
 						</object>
 						<object class="NSArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
@@ -5930,6 +5933,10 @@ wGw</bytes>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">parameter_table</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">view</string>
 								<string key="candidateClassName">id</string>
 							</object>
 						</object>

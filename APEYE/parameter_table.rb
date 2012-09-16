@@ -5,12 +5,14 @@ class ParameterTable
   attr_accessor :data_array
 
   def populate(array_of_data)
+    @parameter_table.registerForDraggedTypes([NSPasteboardTypeString])
+    
     @data_array = array_of_data
     reload!
   end
 
   def get_parameters
-    @data_array
+    lambda { @data_array }
   end
 
   def reload!
@@ -44,11 +46,15 @@ class ParameterTable
 
   def tableView(view, writeRowsWithIndexes: rowIndexes, toPasteboard: pboard)
     row_data_array = []
-    rowIndexes.each { |row| row_data_array << @data_array[row] }
-    pboard.setString(row_data_array.to_yaml.to_s, forType: "Parameter")
+    rowIndexes.each do |row|
+      row_data_array << @data_array[row].to_a
+    end
+    
+    pboard.setString(row_data_array.to_yaml.to_s, forType: NSPasteboardTypeString)
 
     puts "Drop copied to pboard"
 
+    @old_row_indexes = rowIndexes
     return true
   end
 
@@ -65,12 +71,19 @@ class ParameterTable
   def tableView(view, acceptDrop: info, row: droppedRow, dropOperation: op)
     puts "Accepted Drop"
     pboard = info.draggingPasteboard
-    row_data_array = YAML.load(pboard.stringForType("Parameter"))
-    
+    row_data_array = YAML.load(pboard.stringForType(NSPasteboardTypeString))
+
+    puts droppedRow
+
     row_data_array.reverse.each do |row|
-      # Rebuild data_array
+      @data_array.insert(droppedRow, Parameter.new(sign: row[0]["sign"], key: row[0]["key"], value: row[0]["value"]))
     end
 
+    @old_row_indexes.each do |x|
+      x += 1 if x > droppedRow
+      @data_array.delete_at(x)
+    end
+    
     @parameter_table.deselectAll(nil)
     reload!
 
