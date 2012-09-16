@@ -55,9 +55,15 @@ class AppDelegate
 
   def request_data
     data_hash = {}
+
+    path_to_pem   = @pem_file_location_text_field.stringValue
+    signature_b64 = Crypto.new(path_to_pem, @parameter_table.get_parameters).sign_and_encode
+    
     @parameter_table.get_parameters.each do |x|
-      data_hash[x.key.to_sym] = x.value
+      data_hash[x.key.to_sym] = x.value unless x.empty?
     end
+
+    data_hash[:signature_b64] = signature_b64
 
     data_hash
   end

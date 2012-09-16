@@ -9,6 +9,14 @@ class Parameter
     puts "New parameter created"
   end
 
+  def empty?
+    @key == "" && @value == ""
+  end
+
+  def sign?
+    @sign
+  end
+
   def to_puts
     puts "sign: #{@sign}, key: #{@key}, value: #{@value}"
   end

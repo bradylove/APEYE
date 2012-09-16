@@ -12,7 +12,7 @@ class ParameterTable
   end
 
   def get_parameters
-    lambda { @data_array }
+    @data_array
   end
 
   def reload!
@@ -30,10 +30,9 @@ class ParameterTable
   
   def tableViewSelectionDidChange notification
     if @parameter_table.selectedRow == -1
-      @data_array << Parameter.new
+      @data_array << Parameter.new unless @data_array.last.empty?
       reload!
     end
-    puts "Recieved view selection change notification. Row Index: #{@parameter_table.selectedRow}"
   end
 
   def tableView(view, setObjectValue: value, forTableColumn: column, row: index)
@@ -52,15 +51,11 @@ class ParameterTable
     
     pboard.setString(row_data_array.to_yaml.to_s, forType: NSPasteboardTypeString)
 
-    puts "Drop copied to pboard"
-
     @old_row_indexes = rowIndexes
     return true
   end
 
   def tableView(view, validateDrop:info, proposedRow:row, proposedDropOperation:op)
-    puts "Validating drop"
-    
     if op == NSTableViewDropAbove #is the proposed row going to be dropped between rows?
          return NSDragOperationEvery 
     else
@@ -69,11 +64,8 @@ class ParameterTable
   end
 
   def tableView(view, acceptDrop: info, row: droppedRow, dropOperation: op)
-    puts "Accepted Drop"
     pboard = info.draggingPasteboard
     row_data_array = YAML.load(pboard.stringForType(NSPasteboardTypeString))
-
-    puts droppedRow
 
     row_data_array.reverse.each do |row|
       @data_array.insert(droppedRow, Parameter.new(sign: row[0]["sign"], key: row[0]["key"], value: row[0]["value"]))
