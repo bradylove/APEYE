@@ -15,6 +15,7 @@ class AppDelegate
   attr_accessor :url_text_field, :output_text_field, :pem_file_location_text_field
   attr_accessor :request_text_field
   attr_accessor :parameter_table, :recent_requests
+  attr_accessor :sign_checkbox
 
   def awakeFromNib
     @parameters = [Parameter.new(sign: false, key: "key_one", value: "First value")]
@@ -30,9 +31,6 @@ class AppDelegate
   end
 
   def send_button_clicked(sender)
-    puts "Send button clicked"
-
-    
     @recent_requests.update_recent_urls
     @parameter_table.get_parameters.each do |x|
       x.to_puts
@@ -63,7 +61,7 @@ class AppDelegate
       data_hash[x.key.to_sym] = x.value unless x.empty?
     end
 
-    data_hash[:signature_b64] = signature_b64
+    data_hash[:signature_b64] = signature_b64 if @sign_checkbox.state == NSOnState
 
     data_hash
   end
