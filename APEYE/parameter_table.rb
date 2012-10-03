@@ -19,8 +19,15 @@ class ParameterTable
     @parameter_table.reloadData
   end
 
-  def numberOfRowsInTableView view
+  def numberOfRowsInTableView(view)
     @data_array.size rescue 0
+  end
+
+  def keyDown(event)
+    puts "Key Down Somethings"
+    puts "Key Pressed: " + event.characters
+
+    super(event)
   end
 
   def tableView(view, objectValueForTableColumn: column, row: index)

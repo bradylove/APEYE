@@ -4,6 +4,7 @@ class RecentRequestDataSource
 
   def populate
     @plist_path  = NSBundle.mainBundle.pathForResource('RecentUrls', ofType: 'plist')
+    # TODO Convert switch from NSArray to NSDictionary
     @data_array = NSArray.arrayWithContentsOfFile(@plist_path)
     
     puts @data_array

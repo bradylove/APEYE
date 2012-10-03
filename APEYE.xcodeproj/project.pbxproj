@@ -12,8 +12,13 @@
 		2325B9FD1605434400F39F93 /* recent_request.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2325B9FB1605434400F39F93 /* recent_request.rb */; };
 		2325B9FE1605434400F39F93 /* recent_requests_datasource.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2325B9FC1605434400F39F93 /* recent_requests_datasource.rb */; };
 		2325BA011605586200F39F93 /* ns_index_set.rb in Resources */ = {isa = PBXBuildFile; fileRef = 2325BA001605586200F39F93 /* ns_index_set.rb */; };
+		234A5E04161BD007007109FE /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 234A5E03161BD007007109FE /* MacRuby.framework */; };
+		234A5E0A161BD370007109FE /* icon_512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 234A5E09161BD370007109FE /* icon_512x512.png */; };
+		234A5E0C161BD37E007109FE /* icon_256x256.png in Resources */ = {isa = PBXBuildFile; fileRef = 234A5E0B161BD37E007109FE /* icon_256x256.png */; };
+		234A5E0E161BD387007109FE /* icon_128x128.png in Resources */ = {isa = PBXBuildFile; fileRef = 234A5E0D161BD387007109FE /* icon_128x128.png */; };
+		234A5E10161BD38F007109FE /* icon_32x32.png in Resources */ = {isa = PBXBuildFile; fileRef = 234A5E0F161BD38F007109FE /* icon_32x32.png */; };
+		234A5E12161BD39A007109FE /* icon_16x16.png in Resources */ = {isa = PBXBuildFile; fileRef = 234A5E11161BD39A007109FE /* icon_16x16.png */; };
 		2378D2CE1602F6D300F0D5CD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2CD1602F6D300F0D5CD /* Cocoa.framework */; };
-		2378D2D01602F6D300F0D5CD /* MacRuby.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2378D2CF1602F6D300F0D5CD /* MacRuby.framework */; };
 		2378D2D91602F6D300F0D5CD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2D71602F6D300F0D5CD /* InfoPlist.strings */; };
 		2378D2DB1602F6D300F0D5CD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2378D2DA1602F6D300F0D5CD /* main.m */; };
 		2378D2E01602F6D300F0D5CD /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2378D2DE1602F6D300F0D5CD /* MainMenu.xib */; };
@@ -39,9 +44,15 @@
 		2325B9FB1605434400F39F93 /* recent_request.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = recent_request.rb; sourceTree = "<group>"; };
 		2325B9FC1605434400F39F93 /* recent_requests_datasource.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = recent_requests_datasource.rb; sourceTree = "<group>"; };
 		2325BA001605586200F39F93 /* ns_index_set.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = ns_index_set.rb; sourceTree = "<group>"; };
+		234A5E03161BD007007109FE /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = /Library/Frameworks/MacRuby.framework; sourceTree = "<absolute>"; };
+		234A5E09161BD370007109FE /* icon_512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_512x512.png; path = ../icon_512x512.png; sourceTree = "<group>"; };
+		234A5E0B161BD37E007109FE /* icon_256x256.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_256x256.png; path = ../icon_256x256.png; sourceTree = "<group>"; };
+		234A5E0D161BD387007109FE /* icon_128x128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_128x128.png; path = ../icon_128x128.png; sourceTree = "<group>"; };
+		234A5E0F161BD38F007109FE /* icon_32x32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_32x32.png; path = ../icon_32x32.png; sourceTree = "<group>"; };
+		234A5E11161BD39A007109FE /* icon_16x16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_16x16.png; path = ../icon_16x16.png; sourceTree = "<group>"; };
+		234A5E13161BD3AF007109FE /* APEYE.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = APEYE.entitlements; sourceTree = "<group>"; };
 		2378D2C91602F6D300F0D5CD /* APEYE.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APEYE.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2378D2CD1602F6D300F0D5CD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		2378D2CF1602F6D300F0D5CD /* MacRuby.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MacRuby.framework; path = Library/Frameworks/MacRuby.framework; sourceTree = DEVELOPER_DIR; };
 		2378D2D61602F6D300F0D5CD /* APEYE-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "APEYE-Info.plist"; sourceTree = "<group>"; };
 		2378D2D81602F6D300F0D5CD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2378D2DA1602F6D300F0D5CD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -58,8 +69,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234A5E04161BD007007109FE /* MacRuby.framework in Frameworks */,
 				2378D2CE1602F6D300F0D5CD /* Cocoa.framework in Frameworks */,
-				2378D2D01602F6D300F0D5CD /* MacRuby.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,8 +97,8 @@
 		2378D2CC1602F6D300F0D5CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				234A5E03161BD007007109FE /* MacRuby.framework */,
 				2378D2CD1602F6D300F0D5CD /* Cocoa.framework */,
-				2378D2CF1602F6D300F0D5CD /* MacRuby.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -95,6 +106,7 @@
 		2378D2D41602F6D300F0D5CD /* APEYE */ = {
 			isa = PBXGroup;
 			children = (
+				234A5E13161BD3AF007109FE /* APEYE.entitlements */,
 				23BCAB0916066E3600600633 /* crypto.rb */,
 				2325BA001605586200F39F93 /* ns_index_set.rb */,
 				2325B9FB1605434400F39F93 /* recent_request.rb */,
@@ -124,6 +136,11 @@
 		2378D2DD1602F6D300F0D5CD /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				234A5E11161BD39A007109FE /* icon_16x16.png */,
+				234A5E0F161BD38F007109FE /* icon_32x32.png */,
+				234A5E0D161BD387007109FE /* icon_128x128.png */,
+				234A5E0B161BD37E007109FE /* icon_256x256.png */,
+				234A5E09161BD370007109FE /* icon_512x512.png */,
 				2378D2DE1602F6D300F0D5CD /* MainMenu.xib */,
 			);
 			name = Resources;
@@ -147,6 +164,7 @@
 			buildPhases = (
 			);
 			buildToolPath = /usr/local/bin/macruby_deploy;
+			buildWorkingDirectory = /Applications;
 			dependencies = (
 				2378D2D31602F6D300F0D5CD /* PBXTargetDependency */,
 			);
@@ -217,6 +235,11 @@
 				2325B9FE1605434400F39F93 /* recent_requests_datasource.rb in Resources */,
 				2325BA011605586200F39F93 /* ns_index_set.rb in Resources */,
 				23BCAB0A16066E3600600633 /* crypto.rb in Resources */,
+				234A5E0A161BD370007109FE /* icon_512x512.png in Resources */,
+				234A5E0C161BD37E007109FE /* icon_256x256.png in Resources */,
+				234A5E0E161BD387007109FE /* icon_128x128.png in Resources */,
+				234A5E10161BD38F007109FE /* icon_32x32.png in Resources */,
+				234A5E12161BD39A007109FE /* icon_16x16.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

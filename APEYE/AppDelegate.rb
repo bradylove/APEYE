@@ -18,9 +18,7 @@ class AppDelegate
   attr_accessor :sign_checkbox
 
   def awakeFromNib
-    @parameters = [Parameter.new(sign: false, key: "key_one", value: "First value")]
-    @parameters += [Parameter.new(sign: false, key: "key_two", value: "Second value")]
-    @parameters += [Parameter.new(sign: false, key: "", value: "")]
+    @parameters = [Parameter.new(sign: false, key: "", value: "")]
 
     @recent_requests.populate
     @parameter_table.populate @parameters
@@ -28,6 +26,13 @@ class AppDelegate
 
   def applicationDidFinishLaunching(a_notification)
     # Insert code here to initialize your application
+  end
+
+  def keyDown(event)
+    puts "Key Down Somethings"
+    puts "Key Pressed: " + event.characters
+
+    super(event)
   end
 
   def send_button_clicked(sender)
@@ -42,8 +47,7 @@ class AppDelegate
     request = Net::HTTP.const_get(get_http_verb).new(uri.request_uri)
     request.content_type = "application/json"
 
-    resp = http.request(request) if get_http_verb == :Get
-    resp = http.request(request, request_data.to_json) if get_http_verb == :Post
+    resp = http.request(request, request_data.to_json)
 
     data = JSON.parse(resp.body, symbolize_names: true)
 
@@ -53,16 +57,18 @@ class AppDelegate
 
   def request_data
     data_hash = {}
-
-    path_to_pem   = @pem_file_location_text_field.stringValue
-    signature_b64 = Crypto.new(path_to_pem, @parameter_table.get_parameters).sign_and_encode
     
     @parameter_table.get_parameters.each do |x|
       data_hash[x.key.to_sym] = x.value unless x.empty?
     end
+    
+    if @sign_checkbox.state == NSOnState
+      path_to_pem   = @pem_file_location_text_field.stringValue
+      signature_b64 = Crypto.new(path_to_pem, @parameter_table.get_parameters).sign_and_encode
 
-    data_hash[:signature_b64] = signature_b64 if @sign_checkbox.state == NSOnState
-
+      data_hash[:signature_b64] = signature_b64
+    end
+    
     data_hash
   end
 
